@@ -22,6 +22,7 @@ namespace TraficSignAddSql
             GenerateQuestion();
         }
         private void NextQuestion()
+
         {
             foreach (var rd in RadioButtons())
             {
