@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OssmanDemoDB" Class="LinqToSql" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0Q2CI4E\OSSYSQL;Initial Catalog=OssmanDemoDB;Persist Security Info=True;User ID=sa" SettingsObjectName="TraficSignAddSql.Properties.Settings" SettingsPropertyName="OssmanDemoDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Picture" Member="Pictures">
+    <Type Name="Picture">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ImageSign" Type="System.Byte[]" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="SignName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
